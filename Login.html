@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Login.css">
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase-auth.js"></script>
+        <script src="Login.js"></script>
+    </head>
+    <body>
+        <div class="hero">
+            <div class="form-box">
+            <div class="button">
+                <div id="btn"></div>
+                <button type = "button" class="toggle-btn" onclick="Login()" >Log In</button>
+                <button type = "button" class="toggle-btn" onclick="Register()">Register</button>
+            </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/" target="_blank">
+                <img src="fb.png" alt="text"></a>
+                <a href="https://twitter.com/LOGIN" target="_blank">
+                <img src="tw.png"></a>
+                <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser" target="_blank">
+                <img src="gp.png"></a>
+            </div>
+            <form id="Login" class="inputforms">
+                <input type="email" id="input-forms" placeholder="Enter email address" required/>
+                <input type="password" id="input-formss"  placeholder="Enter password" required> 
+               <button type="button" onclick="signIn()" id="submit-btn">Login</button>
+        </form> 
+        <form id="Register" class="inputforms">
+            <div id="form">
+                <div id="container"></div>
+                
+            <input type="email" id="input-forms"   placeholder="Enter email address" required/>
+            <input type="password" id="input-formss"  placeholder="Enter password" required/>
+            
+            <button type="button" onclick="signUp()" id="submit-btn">Register</button>
+        </div>
+
+            
+            <!-- <button type="submit" class="submit-btn">Register</button> -->
+        </form> 
+        </div>
+        </div>
+
+        <script>
+            var x= document.getElementById("Login");
+            var y= document.getElementById("Register");
+            var z= document.getElementById("btn");
+
+            function Register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+            function Login(){
+                x.style.left="50px";
+                y.style.left="450px";
+                z.style.left="0";
+            }
+        </script>
+    </body>
+</html>
+

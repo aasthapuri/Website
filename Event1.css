@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-repeat: no-repeat;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  .gradient-text {
+    /* background: -webkit-linear-gradient(270.97deg, #FFE580 -21.36%, #FF7571 -2.45%, #EA5DAD 26.84%, #C2A0FD 64.15%, #3BF0E4 108.29%, #B2F4B6 159.03%); */
+    background: linear-gradient(267.91deg, #9921e8 9.35%, #FF7170 96.48%);/*western university*/
+    -webkit-background-clip: text;
+    font-size: 100px;
+    -webkit-text-fill-color: transparent;
+}
+  #submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    color: white;
+    margin-top: 20px;
+    margin-left: 40px;
+    background: black;
+    outline: none;
+    border-radius: 30px;
+}
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  .style{
+      /* background: -webkit-linear-gradient(270.97deg, #FFE580 -21.36%, #FF7571 -2.45%, #EA5DAD 26.84%, #C2A0FD 64.15%, #3BF0E4 108.29%, #B2F4B6 159.03%); */
+    background: linear-gradient(267.91deg, #9921e8 9.35%, #FF7170 96.48%);/*western university*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    background-image: url("Background.jpg");
+    height: 500px;
+    color: blueviolet;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    padding: 0 16px;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: grey;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
